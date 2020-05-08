@@ -19,7 +19,7 @@ class BooksController < ApplicationController
 	  	redirect_to book_path(book.id)
 	  else
       @books = Book.all
-      @book = Book.new
+      @book = book
 	  	render "index"
 	  end
   end
